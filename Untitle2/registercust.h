@@ -1,6 +1,5 @@
 #ifndef REGISTERCUST_H
 #define REGISTERCUST_H
-
 #include <QDialog>
 
 class mainwindow;
@@ -18,12 +17,14 @@ public:
     explicit registercust(QWidget *parent = nullptr);
     ~registercust();
 
+
 private slots:
     void on_registerpb_clicked();
 
 private:
     Ui::registercust *ui;
     customer *custwin;
+
 };
 
 #endif // REGISTERCUST_H

@@ -7,6 +7,7 @@ registercust::registercust(QWidget *parent) :
     ui(new Ui::registercust)
 {
     ui->setupUi(this);
+
 }
 
 registercust::~registercust()

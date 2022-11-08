@@ -18,6 +18,7 @@ SOURCES += \
     seller.cpp
 
 HEADERS += \
+    Market.h \
     customer.h \
     home.h \
     product.h \

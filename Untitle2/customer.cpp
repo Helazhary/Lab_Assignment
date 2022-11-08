@@ -1,11 +1,13 @@
 #include "customer.h"
 #include "ui_customer.h"
 #include"home.h"
-customer::customer(QWidget *parent,product* p) :
-    QDialog(parent),
-    ui(new Ui::customer)
+customer::customer(QWidget *parent) :
+       QDialog(parent)
+     ,ui(new Ui::customer)
+
 {
     ui->setupUi(this);
+    products = new product;
 }
 
 customer::~customer()
@@ -21,4 +23,12 @@ void customer::on_pushButton_5_clicked()
 }
 
 
+ void customer::on_Sname_clicked()
+{
+
+
+    ui->Name_List->setText(products->name);
+
+
+}
 

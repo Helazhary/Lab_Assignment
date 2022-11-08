@@ -15,7 +15,8 @@ registerseller::~registerseller()
 
 void registerseller::on_register_2_clicked()
 {
-    sellwin = new seller;
+    sellwin = new seller(nullptr);
+
     sellwin->name = ui->name->text();
     sellwin->email = ui->email->text();
     sellwin->show();

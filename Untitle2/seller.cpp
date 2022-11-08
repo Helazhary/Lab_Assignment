@@ -1,13 +1,12 @@
 #include "seller.h"
 #include "ui_seller.h"
 #include "home.h"
-#include"product.h"
-seller::seller(QWidget *parent, product *prod_list) :
+seller::seller(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::seller)
 {
     ui->setupUi(this);
-    p=prod_list;
+    products=new product[10];
 }
 
 seller::~seller()
@@ -19,13 +18,26 @@ void seller::on_pushButton_2_clicked()
 {
     homewin = new home();
     homewin->show();
+
     this->close();
 
 }
 
+void seller::reset()
+{
 
+    ui->name->setText("");
+}
 void seller::on_addpro_clicked()
 {
-    p->add_product(ui->name->text());
+
+    products->name=ui->name->text();
+    std::ofstream write;
+    write.open("PRODUCTS.txt");
+    write<<products->name.toStdString();
+    write.close();
+
+    end++;
+    ui->category->setText(products->name );
 }
 

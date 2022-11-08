@@ -147,6 +147,32 @@
     <string>Category:</string>
    </property>
   </widget>
+  <widget class="QLabel" name="Name_List">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>190</y>
+     <width>161</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>                ...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Category_List">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>170</y>
+     <width>161</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>                ...</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

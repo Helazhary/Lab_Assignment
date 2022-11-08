@@ -18,6 +18,7 @@ public:
     explicit registerseller(QWidget *parent = nullptr);
     ~registerseller();
 
+
 private slots:
     void on_register_2_clicked();
 

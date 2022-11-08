@@ -7,6 +7,8 @@ home::home(QWidget *parent)
     , ui(new Ui::home)
 {
     ui->setupUi(this);
+    home_p=new product();
+    home_p->name="home";  // ADDED
 }
 
 home::~home()
@@ -26,8 +28,8 @@ void home::on_sellpb_clicked()
 void home::on_buypb_clicked()
 {
     custwin = new registercust();
-    custwin->show();
-    this->close();
+   custwin->show();
+   this->close();
 
 }
 

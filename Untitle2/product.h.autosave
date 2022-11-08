@@ -10,8 +10,8 @@ public:
     product();
         std::string temp;
         QString name,price,quantity,category;
+        
         void download();
-
 };
 
 #endif // PRODUCT_H

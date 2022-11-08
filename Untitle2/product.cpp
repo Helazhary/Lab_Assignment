@@ -1,18 +1,13 @@
 #include "product.h"
-
+#include<fstream>
 product::product()
 {
-
+    download();
 }
-void product::add_product(QString n)
+void product::download()
 {
-    arr[end].name=n;
-    end++;
+    std::ifstream read;
+    read.open("PRODUCTS.txt");
+    read>>temp;
+    name=QString::fromStdString(temp);
 }
-   void product::show()
-   {
-       for(int i=0;i<end;i++)
-       {
-
-       }
-   }
